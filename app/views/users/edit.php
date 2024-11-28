@@ -1,5 +1,5 @@
 <!-- app/views/user/edit.php -->
-<?php include '../../public/header.php'; ?>
+<?php include '../public/header.php'; ?>
 
 <div class="container my-5">
     <div class="card shadow-lg">
@@ -27,4 +27,4 @@
     </div>
 </div>
 
-<?php include '../../public/footer.php'; ?>
+<?php include '../public/footer.php'; ?>
