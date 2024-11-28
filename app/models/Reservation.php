@@ -1,6 +1,6 @@
 <?php
 // app/models/User.php
-require_once '../config/Reservation_database.php';
+require_once '../config/database.php';
 
 class Reservation
 {
