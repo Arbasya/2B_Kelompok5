@@ -3,7 +3,7 @@
 
 require_once 'app/controllers/user5controllers.php';
 require_once 'app/controllers/AccommodationsController.php';
-require_once 'app/controllers/user5controllers.php';
+require_once 'app/controllers/ReservationController.php';
 
 $controller = new AccommodationsController();
 $controller = new User5Controller();
@@ -53,4 +53,6 @@ if ($url == '/Reservation/index' || $url == '/') {
 } else {
     http_response_code(404);
     echo "404 Not Found";
+}
+}
 }
