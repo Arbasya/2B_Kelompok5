@@ -1,5 +1,5 @@
 <?php
-// config/Accommodations_database.php
+// config/database.php
 class Database {
     private $host = '160.19.166.42';
     private $db_name = '2B_klp5';
