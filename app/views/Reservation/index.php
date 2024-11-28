@@ -1,5 +1,5 @@
 <!-- app/views/user/index.php -->
-<?php include 'header.php'; ?>
+<?php include '../../../public/header.php'; ?>
 
 <div class="container my-5">
     <h2 class="text-center mb-4">Daftar Reservasi</h2>
@@ -35,4 +35,4 @@
     </table>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include '../../../public/footer.php'; ?>
