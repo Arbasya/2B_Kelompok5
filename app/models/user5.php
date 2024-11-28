@@ -1,6 +1,6 @@
 <?php
 // app/models/user5.php
-require_once '../config/user5_database.php';
+require_once '../config/database.php';
 
 class user5 {
     private $db;
