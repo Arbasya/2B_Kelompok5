@@ -1,5 +1,5 @@
 <!-- app/views/reservation/edit.php -->
-<?php include '../../public/header.php'; ?>
+<?php include '../public/header.php'; ?>
 
 <div class="container my-5">
     <h2 class="text-center mb-4">Edit Reservasi</h2>
