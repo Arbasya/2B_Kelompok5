@@ -4,22 +4,17 @@
 require_once 'app/controllers/user5controllers.php';
 require_once 'app/controllers/AccommodationsController.php';
 require_once 'app/controllers/ReservationController.php';
+require_once 'app/controllers/HomeController.php';
 
-$reservation = new ReservationController();
-$accommodation = new AccommodationsController();
-$user5= new User5Controller();
-
+$controller = new ReservationController();
+$home = new HomeController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
-if ($url == '/Accommodations/index' || $url == '/') {
-    $accommodation->index();}
-elseif ($url == '/user5/index' || $url == '/') {
-    $user5->index();}
-elseif ($url == '/Reservation/index' || $url == '/') {
-    $reservation->index();
-} elseif ($url == '/user5/create' && $requestMethod == 'GET') {
-    $user5->create();
+if ($url == '/Home/index' || $url == '/') {
+    $home->index();
+}elseif ($url == '/Reservation/index' || $url == '/') {
+        $controller->index();
 } elseif ($url == '/Reservation/create' && $requestMethod == 'GET') {
     $reservation->create();
 } elseif ($url == '/Accommodations/create' && $requestMethod == 'GET') {
