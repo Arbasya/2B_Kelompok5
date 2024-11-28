@@ -42,7 +42,7 @@ class User5Controller {
     public function update($id, $data) {
         $updated = $this->user5Model->update($id, $data);
         if ($updated) {
-            header("Location: /user5/index"); // Redirect to user5 list
+            header("Location: /users/index"); // Redirect to user5 list
         } else {
             echo "Failed to update user5.";
         }
@@ -52,7 +52,7 @@ class User5Controller {
     public function delete($id) {
         $deleted = $this->user5Model->delete($id);
         if ($deleted) {
-            header("Location: /user5/index"); // Redirect to user5 list
+            header("Location: /users/index"); // Redirect to user5 list
         } else {
             echo "Failed to delete user5.";
         }
