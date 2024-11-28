@@ -6,8 +6,6 @@ require_once 'app/controllers/user5controllers.php';
 require_once 'app/controllers/ReservationController.php';
 
 $controller = new ReservationController();
-$controller = new User5Controller();
-$controller = new AccommodationsController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
@@ -41,15 +39,6 @@ if ($url == '/Reservation/index' || $url == '/') {
 } elseif (preg_match('/\/Reservation\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $userId = $matches[1];
     $controller->delete($userId);
-} elseif (preg_match('/\/user5\/edit\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
-    $user5Id = $matches[1];
-    $controller->edit($user5Id);
-} elseif (preg_match('/\/user5\/update\/(\d+)/', $url, $matches) && $requestMethod == 'POST') {
-    $user5Id = $matches[1];
-    $controller->update($user5Id, $_POST);
-} elseif (preg_match('/\/user5\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
-    $user5Id = $matches[1];
-    $controller->delete($user5Id);
 } else {
     http_response_code(404);
     echo "404 Not Found";
