@@ -1,5 +1,5 @@
 <!-- app/views/Accommodations/edit.php -->
-<?php include '../../public/header.php'; ?>
+<?php include '../public/header.php'; ?>
 
 <div class="container my-5">
     <div class="bg-white p-4 rounded shadow-sm">
@@ -29,4 +29,4 @@
     </div>
 </div>
 
-<?php include '../../public/footer.php'; ?>
+<?php include '../public/footer.php'; ?>

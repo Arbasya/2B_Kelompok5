@@ -1,5 +1,5 @@
 <!-- app/views/Accommodations/index.php -->
-<?php include '../../public/header.php'; ?>
+<?php include '../public/header.php'; ?>
 
 <div class="container my-5">
     <h2 class="text-center mb-4">Daftar Penginapan</h2>
@@ -35,4 +35,4 @@
     </table>
 </div>
 
-<?php include '../../public/footer.php'; ?>
+<?php include '../public/footer.php'; ?>

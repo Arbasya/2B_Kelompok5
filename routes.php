@@ -1,5 +1,5 @@
 <?php
-// Accommodations_routes.php
+// routes.php
 
 require_once 'app/controllers/AccommodationsController.php';
 

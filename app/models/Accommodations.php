@@ -1,6 +1,6 @@
 <?php
 // app/models/Accommodations.php
-require_once '../config/Accommodations_database.php';
+require_once '../config/database.php';
 
 class Accommodations {
     private $db;
