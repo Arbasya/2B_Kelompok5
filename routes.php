@@ -3,18 +3,23 @@
 
 require_once 'app/controllers/user5controllers.php';
 require_once 'app/controllers/ReservationController.php';
+require_once 'app/controllers/AccommodationsController.php';
 
+$controller = new AccommodationsController();
 $controller = new User5Controller();
 $controller = new ReservationController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
+if ($url == '/Accommodations/index' || $url == '/') {
 if ($url == '/user5/index' || $url == '/') {
 if ($url == '/Reservation/index' || $url == '/') {
     $controller->index();
 } elseif ($url == '/user5/create' && $requestMethod == 'GET') {
 } elseif ($url == '/Reservation/create' && $requestMethod == 'GET') {
+} elseif ($url == '/Accommodations/create' && $requestMethod == 'GET') {
     $controller->create();
+} elseif ($url == '/Accommodations/store' && $requestMethod == 'POST') {
 } elseif ($url == '/user5/store' && $requestMethod == 'POST') {
 } elseif ($url == '/Reservation/store' && $requestMethod == 'POST') {
     $controller->store();
