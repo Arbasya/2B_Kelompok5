@@ -58,7 +58,7 @@
         <h2>Silakan pilih menu berikut:</h2>
         <nav>
             <a href="/Accommodations/index">Accommodations</a>
-            <a href="/user5/index">User Management</a>
+            <a href="/users/index">User Management</a>
             <a href="/Reservation/index">Reservations</a>
         </nav>
     </main>
