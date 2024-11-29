@@ -26,7 +26,7 @@ class User5Controller {
     
         if ($nama && $email && $nomor_telepon) {
             $this->user5Model->add($nama, $email, $nomor_telepon);
-            header('Location: /user5/index');
+            header('Location: /users/index');
         } else {
             echo "Harap isi semua field.";
         }
