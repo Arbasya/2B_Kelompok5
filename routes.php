@@ -25,7 +25,9 @@ if ($url == '/Home/index' || $url == '/') {
     $reservation->create();
 } elseif ($url == '/Accommodations/create' && $requestMethod == 'GET') {
     $accommodation->create();
-} elseif ($url == '/users/store' && $requestMethod == 'POST') {
+} elseif ($url == '/user5/create' && $requestMethod == 'GET') {
+    $user5->create();
+} elseif ($url == '/user5/store' && $requestMethod == 'POST') {
     $user5->store();
 } elseif ($url == '/Reservation/store' && $requestMethod == 'POST') {
     $reservation->store();
